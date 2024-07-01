@@ -1,0 +1,137 @@
+:root {
+  /*Colors of the design*/
+  --font-inter: "Inter", sans-serif;
+  --magenta: #dd0a59;
+  --light-pink: #ffefef;
+  --dark-grey: #241e26;
+  --coffee: #d9ab82;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: var(--light-pink);
+  display: flex;
+  padding: 14px 35px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}
+.container-links {
+  position: absolute;
+  top: 90px;
+  background-color: var(--light-pink);
+  width: 100%;
+  height: 100vh;
+  z-index: 400;
+  left: 0;
+}
+.container-links::selection{
+  background-color: transparent;
+}
+.subcontainer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  
+}
+.nav-link {
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-inter);
+  color: var(--dark-grey);
+  text-decoration: none;
+}
+.nav-link:hover {
+  background-color: var(--magenta);
+  color: #ffff;
+}
+
+.btn-navbar {
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--magenta);
+  color: #ffff;
+  width: 70%;
+  border: 2px solid var(--magenta);
+  font-weight: bolder;
+  font-size: 18px;
+  transition: transform .3s ease;
+}
+.btn-navbar:hover {
+  background-color: #ffff;
+  color: var(--magenta);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.btn-icon {
+  width: 35px;
+  height: 50px;
+  background-color: var(--magenta);
+  padding: 0px 14px;
+  border-radius: 8px;
+  align-self: center;
+  border: 2px solid var(--magenta);
+  color: #ffff;
+
+}
+.btn-icon:hover {
+  background-color: #ffff;
+  /*ver cómo cambiar el color del svg icon*/
+  color: var(--magenta);
+}
+/*Styles for handling btn-icon*/
+.hidden {
+  display: none;
+}
+.container-links-desktop {
+  display: none;
+}
+.flor-icon {
+  transition: transform 0.3s ease;
+}
+.flor-icon:hover {
+  transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 925px) {
+  .container-links {
+    display: none;
+  }
+  .btn-icon {
+    display: none;
+  }
+  .container-links-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+  .nav-link-desktop {
+    margin: 0px 75px;
+    text-align: left;
+    white-space: nowrap;
+    font-family: var(--font-inter);
+    color: var(--dark-grey);
+    text-decoration: none;
+  }
+  .nav-link-desktop:hover {
+    transform: scale(1.05);
+    color: var(--magenta);
+    text-decoration: underline;
+  }
+  .btn-navbar{
+    padding: 8px;
+    border-radius: 20px;
+    margin-top: 3px;
+  }
+}

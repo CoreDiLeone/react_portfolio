@@ -1,0 +1,64 @@
+:root {
+  /*Colors of the design*/
+  --font-inter: "Inter", sans-serif;
+  --magenta: #dd0a59;
+  --light-pink: #ffefef;
+  --dark-grey: #241e26;
+  --coffee: #d9ab82;
+}
+.aboutme-section {
+  position: relative;
+  top: 250px;
+  background-color: var(--light-pink);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 18px 18px 30px;
+}
+
+.aboutme-container-info {
+  min-width: 200px;
+  max-width: 450px;
+  margin: 0px auto;
+}
+.aboutme-title {
+  font-family: var(--font-inter);
+  font-weight: bold;
+  font-size: 28px;
+  color: var(--dark-grey);
+  padding: 10px;
+}
+.aboutme-text {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: var(--dark-grey);
+}
+.aboutme-img {
+  display: none;
+}
+@media screen and (min-width: 925px) {
+  .aboutme-img {
+    display: block;
+    background-color: var(--magenta);
+    padding: 8px;
+    border-radius: 50%;
+    width: 30%;
+    margin-top: 10px;
+  }
+  .aboutme-container {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+  }
+  .aboutme-container-info {
+    align-self: center;
+
+  }
+  .aboutme-title{
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .aboutme-text{
+    font-size: 18px;
+  }
+}
