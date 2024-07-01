@@ -15,7 +15,7 @@ function Hero() {
        <section className="main-hero">
         <div className="container-hero">
         <div className="container-hero-img">
-       <img src={Perfil} alt="florencia costa" className="hero-img"/>
+       <img src={Perfil} alt="florencia costa" className="hero-img desktop"/>
        <a href={Document} className="btn-cv-desktop" target="_blank">Mi CV</a>
        </div>
        <div className="container-hero-info">

@@ -1,0 +1,15 @@
+:root {
+    /*Colors of the design*/
+    --font-inter: "Inter", sans-serif;
+    --magenta: #dd0a59;
+    --light-pink: #ffefef;
+    --dark-grey: #241e26;
+    --coffee: #d9ab82;
+  }
+
+.contact-section{
+    position: relative;
+    top: 100vh;
+    height: 50vh;
+    background-color: var(--light-pink);
+}

@@ -8,7 +8,7 @@
 }
 .aboutme-section {
   position: relative;
-  top: 250px;
+  top: 50vh;
   background-color: var(--light-pink);
   box-sizing: border-box;
   text-align: center;

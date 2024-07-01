@@ -1,0 +1,16 @@
+:root {
+    /*Colors of the design*/
+    --font-inter: "Inter", sans-serif;
+    --magenta: #dd0a59;
+    --light-pink: #ffefef;
+    --dark-grey: #241e26;
+    --coffee: #d9ab82;
+  }
+
+footer{
+    position: relative;
+    top: 100vh;
+    background-color: var(--light-pink);
+    width: 200px;
+    height: 200px;
+}

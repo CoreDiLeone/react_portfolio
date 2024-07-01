@@ -36,7 +36,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 20vh;
   
 }
 .nav-link {
@@ -62,7 +62,7 @@ nav {
   width: 70%;
   border: 2px solid var(--magenta);
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 22px;
   transition: transform .3s ease;
 }
 .btn-navbar:hover {
@@ -123,6 +123,7 @@ nav {
     font-family: var(--font-inter);
     color: var(--dark-grey);
     text-decoration: none;
+    font-size: 20px;
   }
   .nav-link-desktop:hover {
     transform: scale(1.05);
