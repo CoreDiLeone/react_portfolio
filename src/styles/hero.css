@@ -12,25 +12,28 @@
 * {
   margin: 0px;
   padding: 0px;
-
 }
-html, body{
+html,
+body {
   width: 100%;
-
 }
 .main-hero {
   position: relative;
   top: 95px;
   font-family: var(--font-inter);
   text-align: center;
-  padding: 10px;
-  padding-bottom: 0px;
+  padding: 70px 0px 0px;
   background-image: url("../images/waves-pink.svg");
   background-color: var(--light-pink);
-  height: 105vh;
+  height: 115vh;
   box-sizing: border-box;
   overflow: hidden;
   width: 100%;
+}
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-icon {
   width: 50px;
@@ -38,8 +41,12 @@ html, body{
 }
 
 .hero-img {
-  width: 400px;
+  width: 100%;
   padding: 20px;
+  transition: transform 0.3s ease;
+}
+.hero-img:hover{
+  transform: scale(1.1);
 }
 .hero-title {
   font-family: var(--light-pink);
@@ -48,7 +55,7 @@ html, body{
   font-size: 42px;
   margin: 15px 0px;
 }
-.title-habilities{
+.title-habilities {
   margin: 15px 0px;
   font-size: 25px;
 }
@@ -73,6 +80,8 @@ html, body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  max-width: 450px;
 }
 .btn-cv {
   background-color: var(--magenta);
@@ -85,12 +94,16 @@ html, body{
   width: 50px;
   position: relative;
   top: 30px;
+  transition: transform 0.3s ease;
+  font-size: 18px;
+  font-weight: bolder;
 }
 .btn-cv:hover {
   color: var(--magenta);
   background-color: #ffff;
+  transform: scale(1.1);
 }
-.btn-cv-desktop{
+.btn-cv-desktop {
   display: none;
 }
 @media screen and (min-width: 925px) {
@@ -99,8 +112,9 @@ html, body{
     justify-content: center;
     margin-top: 50px;
     box-sizing: border-box;
+    flex-direction: row;
   }
-  .hero-img .desktop{
+  .hero-img .desktop {
     width: 1000px;
   }
   .container-hero-info {
@@ -112,16 +126,15 @@ html, body{
     margin-left: 50px;
   }
   .hero-title {
-    font-size: 55px;
+    font-size: 60px;
   }
   .hero-subtitle {
     font-size: 36px;
   }
   .title-habilities {
     font-size: 30px;
-   
   }
-  .btn-cv-desktop{
+  .btn-cv-desktop {
     display: inline;
     margin-top: 10px;
     background-color: var(--magenta);
@@ -131,21 +144,25 @@ html, body{
     color: #fff;
     border: 2px solid var(--magenta);
     text-decoration: none;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+    font-weight: bolder;
   }
-  .btn-cv-desktop:hover{
+  .btn-cv-desktop:hover {
     background-color: #fff;
     color: var(--magenta);
     transform: scale(1.05);
   }
-  .btn-cv{
+  .btn-cv {
     display: none;
   }
   .hero-icon {
     width: 70px;
-    
   }
-  .main-hero{
+  .main-hero {
     height: 95vh;
+  }
+  .container-hero-img {
+    width: 500px;
   }
 }

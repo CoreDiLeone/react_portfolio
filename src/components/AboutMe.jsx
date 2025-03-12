@@ -1,8 +1,8 @@
 import PerfilImage from "../images/aboutme-img.svg";
 import "../styles/aboutme.css";
-function Aboutme() {
+function Aboutme({id}) {
   return (
-    <section className="aboutme-section">
+    <section className="aboutme-section" id={id}>
     <div className="aboutme-container">
         <div className="aboutme-container-info">
       <h3 className="aboutme-title">Sobre mi</h3>

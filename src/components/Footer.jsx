@@ -6,12 +6,17 @@ const Footer = () =>{
 
     return(
 
-        <footer>
-            <div>
-             <a target="_blank" rel="noopener noreferrer"><img src={GithubIcon} alt="github" /></a>
-             <a  target="_blank" rel="noopener noreferrer"><img src={LinkedIn} alt="linkedin" /></a>
+        <footer> 
+            <div className="footer-container-icons">
+             <a href="https://github.com/CoreDiLeone" target="_blank" rel="noopener noreferrer" className="footer-icon"><img src={GithubIcon} alt="github" /></a>
+             <a href="https://www.linkedin.com/in/florenciacosta-fontend-developer-jr/" target="_blank" rel="noopener noreferrer" className="footer-icon"><img src={LinkedIn} alt="linkedin" /></a>
              </div>
-             <a target="_blank" rel="noopener noreferrer"><img src={TopIcon} alt="top" /></a>
+             <div>
+                <p className="footer-text">
+                    Diseñado y desarrollado por Florencia Costa 2024.
+                </p>
+             </div>
+             <a href="#hero" rel="noopener noreferrer" className="footer-icon"><img src={TopIcon} alt="top" /></a>
         </footer>
     )
 }

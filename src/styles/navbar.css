@@ -28,6 +28,9 @@ nav {
   height: 100vh;
   z-index: 400;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-links::selection{
   background-color: transparent;
@@ -36,7 +39,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20vh;
+  width: 100%;
   
 }
 .nav-link {
@@ -47,6 +50,7 @@ nav {
   font-family: var(--font-inter);
   color: var(--dark-grey);
   text-decoration: none;
+  font-size: 20px;
 }
 .nav-link:hover {
   background-color: var(--magenta);
@@ -64,6 +68,7 @@ nav {
   font-weight: bolder;
   font-size: 22px;
   transition: transform .3s ease;
+  text-decoration: none;
 }
 .btn-navbar:hover {
   background-color: #ffff;

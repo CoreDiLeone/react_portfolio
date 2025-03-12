@@ -18,33 +18,33 @@ function Navbar() {
 
         <div className={btn ? "container-links" : "container-links hidden"}>
           <div className="subcontainer-links">
-            <a href="" className="nav-link">
+            <a href="#hero" className="nav-link">
               Inicio
             </a>
-            <a href="" className="nav-link">
+            <a href="#aboutme" className="nav-link">
               Sobre mi
             </a>
-            <a href="" className="nav-link">
+            <a href="#projects" className="nav-link">
               Proyectos
             </a>
 
-            <button className="nav-link btn-navbar">¡Contáctame!</button>
+            <a href="#contact"className="nav-link btn-navbar">¡Contáctame!</a>
           </div>
         </div>
 
         <div>
           <div className="container-links-desktop">
-            <a href="" className="nav-link-desktop">
+            <a href="#hero" className="nav-link-desktop">
               Inicio
             </a>
-            <a href="" className="nav-link-desktop">
+            <a href="#aboutme" className="nav-link-desktop">
               Sobre mi
             </a>
-            <a href="" className="nav-link-desktop">
+            <a href="#projects" className="nav-link-desktop">
               Proyectos
             </a>
 
-            <button className="btn-navbar">¡Contáctame!</button>
+            <a href="#contact" className="btn-navbar">¡Contáctame!</a>
           </div>
         </div>
 

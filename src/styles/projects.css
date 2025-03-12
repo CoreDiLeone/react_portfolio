@@ -9,18 +9,14 @@
   --coffee: #d9ab82;
   --font-zilla: "Zilla Slab", serif;
 }
-
+*{
+  font-family: var(--font-inter);
+}
 .projects-section{
   position: relative;
   top: 80vh;
   text-align: center;
-  
-}
-.projects-section h3{
-  font-size: 28px;
-  font-family: var(--font-inter);
-  color: var(--dark-grey);
-  padding: 10px 0px;
+  padding-top: 150px;
 }
 .project {
   display: flex;
@@ -28,7 +24,11 @@
   margin: 110px 20px;
   position: relative;
 }
- 
+ .project-main-title{
+  font-size: 34px;
+  color: var(--dark-grey);
+  font-weight: bolder;
+ }
 .project-image-container {
   position: relative;
   margin: auto;
@@ -52,13 +52,17 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s;
+  gap: 35px;
 }
-.overlay img{
-  width: 180px;
-}
+.project-computer-icon{
+  width: 130px;
 
-.project-image-container:hover .overlay {
-  opacity: 0.5;
+}
+.project-github-icon{
+  width: 120px;
+}
+.project-image-container:hover .overlay{
+  opacity: 0.8;
 }
 
 .overlay a {
@@ -69,19 +73,28 @@
 
 .project-info {
   display: none;
-  padding: 20px;
+  padding-left: 20px;
 }
-.project-info h2{
-  font-size: 30px;
-  font-family: var(--font-zilla);
-  background-color: var(--coffee);
-  color: #fff;
-  display: inline;
-}
+
 .project-section{
   background-color: var(--light-pink);
 }
-@media (min-width: 1025px) {
+.project-title{
+  font-size: 22px;
+  color: var(--dark-grey);
+  padding: 15px 0;
+
+}
+
+.project-icon{
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+.project-icon:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 1210px) {
   .projects-section{
     display: flex;
     flex-direction: column;
@@ -92,20 +105,37 @@
     flex-grow: 1;
     width: 70%;
   }
-
-  .project-info {
-    display: block;
-    background-color: #fff;
-  }
-
   .project-image-container {
     flex: 1;
   }
-
   .project-info {
+    display: flex;
     flex: 1;
-    padding-left: 20px;
+    padding: 20px 50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
   }
+ 
+  .project-title{
+    display: none;
+  }
+  .project-info-title{
+    font-size: 30px;
+    color: var(--dark-grey);
+    display: inline;
+    text-align: center;
+  }
+  .project-info-description{
+    font-size: 20px;
+    padding-top: 40px;
+    padding:  20px 40px 0px 0px;
+  }
+  .overlay{
+    gap: 65px;
+  }
+  
 }
 
 
