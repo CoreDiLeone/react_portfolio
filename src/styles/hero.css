@@ -38,6 +38,7 @@ body {
 .hero-icon {
   width: 50px;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .hero-img {

@@ -13,7 +13,7 @@ const Footer = () =>{
              </div>
              <div>
                 <p className="footer-text">
-                    Diseñado y desarrollado por Florencia Costa 2024.
+                    Diseñado y desarrollado por Florencia Costa 2025.
                 </p>
              </div>
              <a href="#hero" rel="noopener noreferrer" className="footer-icon"><img src={TopIcon} alt="top" /></a>

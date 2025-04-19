@@ -16,7 +16,6 @@ const Projects = ({image, title, description, githubLink, liveLink, icons}) =>{
       </div>
       <div className="project-info">
         <div>
-        <h2 className="project-info-title">{title}</h2>
         <p className="project-info-description">{description}</p>
         </div>
         <div className="container-project-icons">
