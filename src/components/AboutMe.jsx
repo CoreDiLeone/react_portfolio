@@ -10,7 +10,7 @@ function Aboutme({id}) {
         Egresada de Jóvenes a Programar 2023 con diploma en Desarrollo Web
         y también bachiller en Ingeniería. <br /> <br />Cuento con más de un año y medio de
         experiencia en diferentes tecnologías que se utilizan dentro del área Frontend pero
-        también he tenido la oportunidad de trabajar con tecnologías como Node, MongoDB y Tailwind. <br /> <br />Me defino como una persona responsable, perseverante, creativa y comprometida con los proyectos;
+        también he tenido la oportunidad de trabajar con Node, MongoDB y Tailwind.  <br /> <br />Me defino como una persona responsable, perseverante, creativa y comprometida con los proyectos;
         con muchas ganas de aprender y crecer profesionalmente.
       </p>
       </div>
