@@ -6,7 +6,7 @@ import ReactIcon from "../icons/react-icon.svg";
 import BootsIcon from "../icons/boots-icon.svg";
 import GithIcon from "../icons/git-icon.svg";
 import Perfil from "../images/hero-img-perfil.svg";
-import Document from "../documents/Florencia_Costa_2024.pdf";
+import Document from "../documents/Florencia_Costa_DW_2025.pdf";
 function Hero({id}) {
 
     return(
